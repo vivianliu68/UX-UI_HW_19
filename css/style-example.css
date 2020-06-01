@@ -1,0 +1,70 @@
+#homepage_navbar {
+  display: block;
+  position: absolute;
+  width: 100%;
+  animation: navbar_transition 2s ease-in-out;
+
+  z-index: 3;
+}
+
+@keyframes navbar_transition {
+  0% {
+    opacity: 0;
+  }
+  /* top: -50px} */
+  100% {
+    opacity: 1;
+  }
+  /* top: 0px} */
+}
+
+.name {
+  font-family: "Questrial", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.navbar_custom {
+  background-color: rgba(15, 10, 10, 0) !important;
+  margin: 0 10%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-nav > .nav-item {
+  padding: 0 15px !important;
+  transition-timing-function: ease-in;
+  transition: 0.2s;
+}
+
+.navbar-nav > .nav-item:hover,
+.navbar-nav > .nav-link:hover {
+  color: orange !important;
+}
+
+.navbar-nav > .nav-item:hover {
+  border-bottom: 1px solid orange;
+  padding-bottom: 2px;
+  transition-timing-function: ease-in;
+  transition: 0.2s;
+}
+
+.navbar-nav > .nav-item > .nav-link {
+  color: white !important;
+  transition-timing-function: ease-in;
+  transition: 0.2s;
+}
+
+/* .navbar-nav > .active_item {
+  background-color: rgba(238, 184, 113, 1) !important;
+} */
+
+.navbar-nav > .nav-item > a.activeLink {
+  color: rgba(255, 166, 0, 0.795) !important;
+}
+
+.navbar-nav > .active_item:hover {
+  border-color: rgba(238, 184, 113, 0.856) !important;
+}

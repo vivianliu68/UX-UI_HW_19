@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vivian Home Page</title>
+  <link href="css/indexstyle.css" rel="stylesheet" type="text/css">
+  <script src="js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href='https://fonts.google.com/specimen/Playfair+Display' rel='stylesheet'>
+  <link href='https://fonts.google.com/specimen/Roboto?query=robo' rel='stylesheet'>
+  <link href='https://fonts.google.com/specimen/Source+Sans+Pro?query=Source+Sans+Pro' rel='stylesheet'>
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }
+    
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:0; opacity:1}
+    }
+    
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+    }
+    
+    /* The Close Button */
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .modal-header {
+      padding: 2px 16px;
+      background-color: #ACD4DD;
+      color: white;
+    }
+    
+    .modal-body {padding: 2px 16px;}
+    
+    .modal-footer {
+      padding: 2px 16px;
+      background-color: white;
+      color: white;
+    }
+    </style>
+</head>
+
+<script>
+    $(document).ready(function(){
+      $(".hide").click(function(){
+        $(".p1").slideUp(2000);
+      });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+      $(".show").click(function(){
+        $(".p1").slidedown(2000);
+      });
+    });
+</script>
+
+
+<body>
+
+<!-- Nav HTML -->
+<header>
+  <nav id="navBar">
+    <div id="logo"><a href="index.html"><img id="logo" src="images/mylogo.png"></a>
+    </div>
+    <div id="navigation">
+      <p><a href="#casestydies">WORK</a></p>
+      <p><a href="#aboutme">ABOUT</a></p>
+      <p><a href="#contact">CONTACT</a></p>
+      <p><a href="#resume">RESUME</a></p>     
+    </div>
+  </nav>
+</header>
+
+<div><img class="show upArrow" src="images/up-arrow.png" alt="up arrow">
+</div>
+
+<!-- HERO HTML -->
+ 
+<section id="intro" class="p1"> 
+  <div class="heroGridArea">
+    <div id="hiViv">
+      <h2>Nice to Meet You!</h2>
+    </div>
+
+    <div id="about">
+      <h1>I am Vivian, a UX/UI & Visual Designer based in sunny Orange County.</h1>
+    </div>
+    <div id="vivPic">
+      <img src="images/Viv-portrait2.png" alt="About Vivian">
+    </div>
+    
+    <div id="downArrow">
+        <a href="#casestydies"></a><img class="arrow bounce hide"  src="images/white-arrow.png" alt="down arrow"></a> 
+    </div>
+  </div>
+</section>
+
+<!-- CASE STYDY HTML -->
+
+<section id="caseStudy"> 
+        <!-- show  button> -->
+  <div>
+    <div class="sectionHead"><a id="casestydies"></a>
+    </div>
+    <div>
+      <h3>UX/UI CASE STUDIES</h3> 
+    </div>
+
+    <section id="casestudyGrid">
+      <div id="epa" class="casestudyGridArea container">
+        <div class="casestudyHeader">EPA
+        </div>
+        <div class="overlay text">GOVERNMENT AGENCY WEBSITE REDESIGN<br>
+          UI STYLE GUIDE + RESPONSIVE WEB DESIGN</div>
+        <!-- <h5>GOVERNMENT AGENCY WEBSITE REDESIGN<br>
+          UI STYLE GUIDE + RESPONSIVE WEB DESIGN </h5> -->
+      </div>
+
+
+      <div id="buzzle" class="casestudyGridArea">
+        <div class="casestudyHeader">Buzzle       
+        </div><br>
+        <!-- <h5>MOBILE MEDICATION MANAGEMENT APP DESIGN</h5> -->
+      </div>
+
+      <div id="esytrek" class="casestudyGridArea">
+        <div class="casestudyHeader">EasyTrek   
+        </div><br>
+        <!-- <h5>MOBILE TRAVEL APP DESIGN</h5> -->
+      </div> 
+
+      <div id="feedoc" class="casestudyGridArea">
+        <div class="casestudyHeader">FeedOC      
+        </div><br>
+        <!-- <h5>NON-PROFIT RESPONSIVE WEB DESIGN<br>
+            UI STYLE GUIDE + WEBSITE REDESIGN</h5> -->
+      </div>
+
+    </section>
+  </div> 
+</section>
+
+<!-- ABOUT ME HTML -->
+<section class="aboutMe"> 
+  <div>
+    <div class="sectionHead"><a id="aboutme"></a>
+    </div>
+    <div>
+      <h3>ABOUT ME</h3>
+    </div>
+    <div class="vivL"><img src="images/Viv-aboutme.png" alt="About Vivian"></div>
+      <div id="aboutText"><h6>With my background in graphics and packing design, I have a successful 
+        career in visual design. But after enrolling in UC Irvine’s UX/UI Design Boot 
+        Camp Program, I came to have a love for learning about User Centered Design and 
+        Process. With my design process, I have a solid foundational skills in problem 
+        solving towards creating user-friendly, and functional products. As a meticulous 
+        design enthusiast, I love playing with colors, typography, and imagery: and these 
+        are just few of my passions!
+        <br><br>In my spare time, I enjoy cooking, pilates, and walking my four-legged doggy HeiHei.</h6>
+      </div>
+  </div>
+  
+ <!-- Skill section -->   
+  <div class="container">
+    <div id="row" class="flex">
+      <div class="flexItem aboutHeading">
+        SKILLS
+        <h6>Design&nbsp;Thinking<br>User-Centric&nbsp;Design&nbsp;Research<br>User&nbsp;Interface&nbsp;Development<br>Persona&nbsp;Development<br>Competitive&nbsp;Analysis<br>Heuristic&nbsp;Analysis<br>User&nbsp;Flow<br>Wireframing<br>Storyboarding<br>
+        </h6>
+      </div>
+      <div class="flexItem"><br><br>
+        <h6>Prototyping<br>Responsive&nbsp;Web&nbsp;Design<br>Usability&nbsp;Testing<br>A/B&nbsp;Testing<br>UI&nbsp;Style&nbsp;Guide<br>Visual&nbsp;Design<br>Responsive&nbsp;Web&nbsp;Design<br>Branding<br>Product&nbsp;Illustration<br></h6>
+      </div>
+      <div class="flexItem aboutHeading">
+        TOOLS
+        <h6>HTML5<br>CSS4<br>Bootstrap<br>Visual&nbsp;Studio&nbsp;Code<br>GitHub<br>Adobe XD<br>InVision<br>Photoshop<br>Figma<br>Miro<br> 
+        </h6>    
+      </div>
+    </div> 
+  </div>
+</sectin>
+
+<!-- CONTACT HTML -->
+<section>
+  <div class="contactBg"><a id="contact"></a>
+    <div class="block_element">
+      <div>
+        <h3><a id="contact">SAY HELLO!</a></h3> 
+        <hr style="width:80px;border:2px solid #97C8D3" class="w3-round">
+      </div>
+      <div>
+        <h4>I am always looking for new opportunities and am comfortable working remotely. 
+        <br><br>Please get in touch and I will get back to you soon.
+        </h4>
+        <form>
+        <input type="text" placeholder="Your Name"></input>
+        <input type="text" placeholder="Your Email"></input>
+      
+        <input type="textarea" placeholder="Your Message"></input>
+        <input class="submit" type="submit" value="SEND MESSAGE"></input>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--testing modal-->
+<section>
+  <div class="aboutMe block_element">
+   
+      <div>
+        <h3><a id="resume">View Resume</a></h3> 
+        <hr style="width:80px;border:2px solid #97C8D3" class="w3-round">
+      </div>
+      <div>
+        <!-- <h4>I am always looking for new opportunities and am comfortable working remotely. 
+        <br><br>Please find my resume .
+        </h4> -->
+        <button class="submit" id="myBtn">RESUME</button>
+      </div>
+    
+  </div>
+</section>
+
+<!-- The Modal -->
+  <div id="myModal" class="modal">
+
+<!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Resume comig soon</h2>
+      </div>
+      <div class="modal-body">
+        <p>Thanks for checking :)</p>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+<!-- Footer HTML -->
+<footer>
+    <div id="footer">
+    <div id="socialIcons"><img src="images/sm-icons.png"><p>Vivian Liu © All Rights Reserved</p>
+    </div>
+    <div id="navigation">
+      <p><a href="#casestydies">WORK</a></p>
+      <p><a href=about.html>ABOUT</a></p>
+      <p><a href="#contact">CONTACT</a></p>
+      <p><a href="#resume">RESUME</a></p>
+    </div>
+</footer>
+
+  <!-- <div class="preloader">
+    <img src="images/mylogo.png">
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/index.js"></script> -->
+
+  </body>
+</html>
+
