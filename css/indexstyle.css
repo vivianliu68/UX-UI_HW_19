@@ -92,7 +92,7 @@ a:visited {
 
 #downArrow {
   grid-area: downArrow;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   margin: -20px 50%;
   align-items: center;
 }
@@ -102,6 +102,13 @@ a:visited {
   margin: 8% 0;
   opacity: 50%;
 }
+
+.arrow:hover {
+  text-align: center;
+  margin: 8% 0;
+  opacity: 100%;
+}
+
 
 .bounce {
   -moz-animation: bounce 3s infinite;
@@ -121,6 +128,19 @@ a:visited {
   }
 }
 
+.upArrow { 
+  opacity: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+.upArrow:hover { 
+  opacity: 100%;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
 
 /* Hero headline */
 h1 {
@@ -220,7 +240,7 @@ div.casestudyGridArea img {
   left: 0;
   right: 0;
   height: 100%;
-  max-width: auto;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(0,0,0,0.8);
@@ -228,6 +248,7 @@ div.casestudyGridArea img {
 
 .container:hover .overlay {
   opacity: 1;
+  display: flex;
 }
 
 .text {
@@ -237,6 +258,7 @@ div.casestudyGridArea img {
   font-weight: 200;
   letter-spacing: 1px; 
   text-align: center;
+  justify-content: center;
   color: white;
   line-height: 22px;
   top: 50%;
@@ -282,10 +304,10 @@ div.casestudyGridArea img {
   letter-spacing: 10;
   text-align: top;
   padding: 10px 35px;
-  height: 41px;
+  height: 46px;
   color: white;
   position: absolute;
-  max-width: max-content;
+  max-width: 550px;
   z-index: auto;
   border-left: 5px solid #7BC3D8;
   background-color: rgba(0,0,0,0.6);
