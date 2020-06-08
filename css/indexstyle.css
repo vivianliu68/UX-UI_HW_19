@@ -1,11 +1,9 @@
-
-
 /* NAVI CSS */
 header {
   position: sticky;
   top: 0px;
-  background-color:rgba(255, 255, 255);
-  padding: 24px; 
+  background-color:rgba(255, 255, 255, 0.8);
+
 }
 /* mouse over link */
 #navBar {
@@ -14,10 +12,28 @@ header {
   margin: 0px 4%;
 }
 
-p a:hover {
-  color: #856E71;
-  text-decoration: none;
-  font-weight: 400;
+#logo {
+  padding: 6px;
+  display: flex;
+  width: 60%;
+}
+
+#navigation {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Roboto';
+  color: #7AA2AD;
+  font-family: 'Roboto','Source Sans Pro';
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px; 
+  margin-left: 8px;
+}
+
+#navigation p {
+  cursor: pointer;
 }
 
 a:link {
@@ -30,64 +46,59 @@ a:visited {
   text-decoration: none;
 }
 
-#logo {
-  display: flex;
-  width: 60%;
+a:hover {
+  color: #856E71;
+  text-decoration: none;
+  font-weight: 400;
 }
 
-#navigation {
-  display: flex;
-  width: 40%;
-  align-items: center;
-  justify-content: space-evenly;
-  font-family: 'Roboto';
-  color: #7AA2AD;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 1px; 
-  margin-left: 20px;
+/* selected link */
+a:active {
+  color: rgb(45, 27, 23);
 }
 
-#navigation p {
-  cursor: pointer;
+/* Thick tan lines */
+hr.new4 {
+  border: 1px solid Linen;
 }
 
 
 /* HERO CSS */
-
-
 #intro {
-  background-color:#E8C4B7; 
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(252,238,231)); 
   padding: 0 80px;
-  /* height: 80vh; */
 }
   
 .heroGridArea {  
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   margin: 0px;
   display: grid;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 5% 55% 15% 25%;
   grid-template-columns: 75% 25%;
   grid-template-areas:
   "hiViv hiViv"
   "about vivPic"
+  "viewResume viewResume"
   "downArrow downArrow";
 }
 
 #hiViv {
   grid-area: hiViv;
   float: left; 
-  margin-top: 40px;
+  margin-top: 10px;
 } 
 
 #about {
   grid-area: about;
-  margin-top: 40px;
+  margin-top: 30px;
 } 
 
 #vivPic {
+  max-width: 80%;
   grid-area: vivPic;
+  margin-top: 40px;
+  padding: 20 10 10 10 px;
 } 
 
 #downArrow {
@@ -95,6 +106,13 @@ a:visited {
   padding-bottom: 50px;
   margin: -20px 50%;
   align-items: center;
+}
+
+#viewResume{
+  grid-area: viewResume;
+  /* padding-bottom: 30px; */
+  float: left; 
+
 }
 
 .arrow {
@@ -128,38 +146,61 @@ a:visited {
   }
 }
 
+
 .upArrow { 
   opacity: 50%;
   position: fixed;
-  bottom: 40px;
+  bottom: 10px;
   right: 40px;
 }
 
 .upArrow:hover { 
   opacity: 100%;
   position: fixed;
-  bottom: 40px;
+  bottom: 10px;
   right: 40px;
+}
+
+#intro button {
+  margin-top: 10px;
+  font-size: 8pt;
+  background-color: #E98F76;
+  border: 1px solid #E98F76;
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+
+/* Empty Box for anchor link */
+.sectionHead {
+  width: 10px;
+	height: 50px;
 }
 
 /* Hero headline */
 h1 {
   font-family: 'Playfair Display';
-  font-size: 72px;
+  /* font-size:56px; */
+  font-size:5vw;
   font-weight: 100;
   letter-spacing: 2px; 
-  color: white;
+  color: #619FB4;
   word-wrap: keep-all;
 } 
 
 /* Hero sub-headline */
 h2 {
   font-family: 'Playfair Display';
-  font-size: 40px;
-  font-style: italic;
+  /* font-size: 38px; */
+  font-size:3vw;
   font-weight: 200;
+  font-style: italic;
   letter-spacing: 1px; 
-  color:#5F422B;
+  color:rgb(119, 98, 101);
 } 
 
 /* Section main header */
@@ -168,10 +209,79 @@ h3 {
   font-size: 50px;
   font-weight: 100;
   letter-spacing: 1px; 
-  color:#856E71;
   text-align: center;
-  padding-top: 50px;
+  color:#856E71;
+  /* padding-top: 40px; */
+}
+
+h4 {
+  font-family:'Playfair Display';
+  font-size: 32px;
+  font-weight: 100;
+  letter-spacing: 10;
+  line-height: 170%;
+  color:white;
+  /* text-align: top; */
 } 
+
+/* Case Study Card Sub Head */
+h5 {
+  font-family: 'Roboto','Source Sans Pro';
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 1px; 
+  line-height: 22px;
+  text-align: top;
+  color: white;
+  position: absolute;
+  padding: 52px 38px;
+}
+
+/* Skill headline */
+h6 {
+  font-family: 'Playfair Display';
+  font-weight: 200;
+  font-size: 24px;
+  color: #619FB4;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: 'Roboto','Source Sans Pro';
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px; 
+  color:rgb(72, 77, 77);
+  text-align: left;
+  line-height: 170%;
+} 
+
+section {
+  display: block;
+}
+
+.content {
+  width: 860px;
+  margin: 0 auto;
+  /* padding: 50px;
+  padding-top: 95px; */
+  text-align: center;
+}
+
+.content button {
+  margin-top: 10px;
+  font-size: 8pt;
+  background-color: #E98F76;
+  border: 1px solid #E98F76;
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+
 
 .w3-round {
   border-radius:16px;
@@ -183,11 +293,6 @@ h3 {
 
 .w3-half img:hover{opacity:1}
 
-/* Empty Box for anchor link */
-.sectionHead {
-  width: 10px;
-	height: 30px;
-}
 
 .upArrow { 
   opacity: 50%;
@@ -195,21 +300,35 @@ h3 {
 
 
 /* Case Study Grids */ 
-.container {
-  position: relative;
-  /* width: 100%; */
-}
-
-
 #caseStudy {
   background-color:#F8F7F4;
 }
 
-#casestudyGrid {
-  margin: 10px;
-  display: grid;
+.container {
+  position: relative;
+  display: flex;
+}
+
+#caseStudy button {
+  margin-top: 10px;
+  font-size: 8pt;
+  background-color: #E98F76;
+  border: 1px solid #E98F76;
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
   padding: 10px;
-  grid-template-rows: 480px 480px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+
+
+#casestudyGrid {
+  /* margin: 10px; */
+  display: grid;
+  padding: 20px;
+  grid-template-rows: 460px 460px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "epa buzzle"
@@ -224,26 +343,31 @@ h3 {
   cursor: pointer;
   display: grid;
   align-content: top;
+  position: relative;
 }
 
 
 div.casestudyGridArea img {
-  width: 80%;
+  width: 70%;
   height: auto;
-  vertical-align:middle
+  vertical-align: middle
 }
 
 .overlay {
   position: absolute;
-  top: 0;
+  /* top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   height: 100%;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(0,0,0,0.8);
+  background-color: #7BC3D8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(29, 55, 72, 0.8); */
 }
 
 .container:hover .overlay {
@@ -254,20 +378,25 @@ div.casestudyGridArea img {
 .text {
   font-family: 'Roboto','Source Sans Pro';
   color: white;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 200;
   letter-spacing: 1px; 
   text-align: center;
-  justify-content: center;
-  color: white;
   line-height: 22px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  /* -ms-transform: translate(-50%, -50%); */
 }
 
-
+/* Case Study Card Main Head */
+.casestudyHeader {
+  background-color: rgba(29, 55, 72, 0.7);
+  font-family:'Playfair Display';
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 10;
+  padding: 10px 35px;
+  height: 46px;
+  color: white; border-left: 8px solid #7BC3D8;
+}
 
 
 #epa {
@@ -290,105 +419,56 @@ div.casestudyGridArea img {
   background-image: url("../images/easytrek-card2.png");
 }
 
-/* Case Study Card Main Head */
-.casestudyHeader {
-  font-family:'Playfair Display';
-  font-size: 30px;
-  font-weight: 100;
-  letter-spacing: 10;
-  text-align: top;
-  padding: 10px 35px;
-  height: 46px;
-  color: white;
-  position: absolute;
-  max-width: 550px;
-  z-index: auto;
-  border-left: 5px solid #7BC3D8;
-  background-color: rgba(0,0,0,0.6);
-  /* padding: 15px;
-  height: 120px;
-  width: max-content;
-  z-index: 100; */
-}
-
-
-/* Case Study Card Sub Head */
-h5 {
-  font-family: 'Roboto','Source Sans Pro';
-  color: white;
-  font-size: 14px;
-  font-weight: 200;
-  letter-spacing: 1px; 
-  text-align: top;
-  color: white;
-  position: absolute;
-  padding: 52px 38px;
-  line-height: 22px;
-}
-
-/* About me body text */
-h6 {
-  line-height: 170%;
-  font-family: 'Roboto','Source Sans Pro';
-  font-weight: 200;
-  font-size: 16px;
-  color: #1F1F1F;
-  letter-spacing: 1px;
-}
+/* About ME CSS */
 
 .aboutMe {
   background: #F4E8E3 url("../images/aboutme-bg.png") no-repeat top;
-  background-position: center;
-  background-image: cover;
-  background-repeat: no-repeats;
-  height: 100%;
+  max-width: 100%;
 }
 
+.aboutContainer {
+  display: inline-block;
+  /* width: 1000px; */
+  justify-content: space-around;
+  padding: 0px 100px 0px 40px;
+}
 
+#vivL {
+  width: 340px;
+}
 
-  .aboutHeading {
-    font-family: 'Playfair Display';
-    height: 25px;
-    color: #856E71;
-    font-size: 26px;
-    font-weight: 200;
-    letter-spacing: 3px; 
-  }
+.aboutContainer img {
+  float: left;
+  padding: 1px 50px;
+  max-width: 80%;
+}
+
+.vivPic2{
+  float: center;
+  width:50%;
+}
+
+span {
+  float: left;
+  width: 1.1em;
+  font-size: 302%;
+  font-family: 'Playfair Display';
+  line-height: 110%;
+  color: #619FB4;
+}
+
+.skillContainer {
+  display: flex;
+
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.flexItem {
+  display: inline-block;
+  justify-content: center;
+} 
   
-  #aboutText {
-    margin:0px 70px 0px 432px;
-  }
-
-
-  .vivL {
-    float: left;
-    padding:50px;
-  }
-
-
-  .container {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: stretch;
-  }
-
-  .flexItem {
-    margin:10px 70px 100px 10px;
-  }
-
-  .flex {
-    display: flex;
-    padding: 10px;
-    margin: 10px;
-  }
- 
-  #row {
-    flex-direction: row;
-  }
-  
-  
-
-
 /*CONTACT  FORM*/
 
 .contactBg {
@@ -401,7 +481,7 @@ h6 {
   margin: 0 auto;
   text-align: center;
   padding: 10px;
-  
+  align-content: flex-start;
 }
 
 input {
@@ -419,16 +499,6 @@ input[type=submit]:hover {
   border:1px solid #7BC3D8;
 }
 
-h4 {
-  font-family: 'Roboto';
-  font-size: 20px;
-  font-weight: 100;
-  letter-spacing: 1px; 
-  color:#7D8D8D;
-  text-align: center;
-  line-height: 170%;
-} 
-
 input[type=textarea] {
   width: 100%;
   height: 120px;
@@ -439,43 +509,61 @@ input[type=textarea] {
 
 .submit {
   margin-top: 20px;
-  font-size: 10pt;
+  font-size: 8pt;
   background-color: #E98F76;
   border: 1px solid #E98F76;
-  width: 200px;
+  width: 160px;
   color: white;
   letter-spacing: 2px;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   align-content: center;
   margin-bottom: 140px;
 }
 
 /* FOOTER CSS */
 
-#footer {
-  color: #7AA2AD;
-  align-items: center;
+
+.footer {
+  background-color:#505050; 
+  padding: 18px; 
+  align-self: center;
+}
+
+#footerContent {
   display: flex;
   flex-direction: row;
   margin: 0px 4%;
-  padding: 30px; 
-  font-family: 'Roboto';
-  color: white;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 1px; 
 }
 
-#socialIcons{
-  margin-right: 100px;
+.footer img {
+ width: 40px;
+ height: 40px;
+ padding: 10px;
+}
+
+#socialIcons {
+  margin-top: 4px;
   display: flex;
-  width: 70%;
+  width: 45%;
 }
 
-footer {
-  background-color:#424545; 
+.p3 {
+  color:lightgrey;
+  font-size: 10pt;
+  box-align:right;
+  margin-top: 20px;
+  width: 15%;
+  font-family: 'Roboto','Source Sans Pro'!important;
 }
+
+
+.p2 {
+  font-size: 10pt;
+  align-items: center;
+  float: right;
+}
+
 
 
 
@@ -540,12 +628,13 @@ footer {
 
     #heroGrid{
       grid-template-rows:
-      300px 300px 300px 300px;
+      300px 300px 300px 300px 300px;
       grid-template-columns: 1fr;
       grid-template-areas:
       "hiViv"
       "about" 
       "vivPic"
+      "viewResume"
       "downArrow";
     }
   
@@ -562,13 +651,23 @@ footer {
 
       #aboutMe {
         grid-template-rows:
-        300px 300px 300px;
+        300px 300px 300px 300px 300px 300px;
         grid-template-columns: 1fr;
         grid-template-areas:
         "vivL"
         "aboutText"
-        "container"
+        "uxskill"
+        "uiskill"
+        "tools";
         }
+        
 
+        #contact {
+          grid-template-rows:
+          300px;
+          grid-template-columns: 1fr;
+          grid-template-areas:
+          "contact";
+          }
   }
 

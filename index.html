@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,11 +7,11 @@
   <link href="css/indexstyle.css" rel="stylesheet" type="text/css">
   <script src="js/index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link href='https://fonts.google.com/specimen/Playfair+Display' rel='stylesheet'>
-  <link href='https://fonts.google.com/specimen/Roboto?query=robo' rel='stylesheet'>
-  <link href='https://fonts.google.com/specimen/Source+Sans+Pro?query=Source+Sans+Pro' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
   <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
+   
     
     /* The Modal (background) */
     .modal {
@@ -82,44 +82,45 @@
       background-color: white;
       color: white;
     }
+    
     </style>
 </head>
 
 <script>
-    $(document).ready(function(){
-      $(".hide").click(function(){
-        $(".p1").slideUp(2000);
-      });
+  $(document).ready(function(){
+    $(".hide").click(function(){
+      $(".p1").slideUp(1500);
     });
+  });
 </script>
 
-<script>
-    $(document).ready(function(){
-      $(".show").click(function(){
-        $(".p1").slidedown(2000);
-      });
+<!-- <script>
+  $(document).ready(function(){
+    $(".show").click(function(){
+      $(".p1").slidedown(2000);
     });
-</script>
-
+  });
+</script> -->
 
 <body>
 
 <!-- Nav HTML -->
 <header>
   <nav id="navBar">
-    <div id="logo"><a href="index.html"><img id="logo" src="images/mylogo.png"></a>
+    <div id="logo"><a href="index.html"><img id="logo" src="images/mylogo.png" alt="my logo"></a>
     </div>
     <div id="navigation">
-      <p><a href="#casestydies">WORK</a></p>
-      <p><a href="#aboutme">ABOUT</a></p>
-      <p><a href="#contact">CONTACT</a></p>
-      <p><a href="#resume">RESUME</a></p>     
+      <p2><a href="index.html">HOME</a></p2>
+      <p2><a href="#work">WORK</a></p2>
+      <p2><a href="#aboutme">ABOUT</a></p2>
+      <p2><a href="#contact">CONTACT</a></p2>
     </div>
   </nav>
+  <hr class="new4">
 </header>
-
+<!-- 
 <div><a href="index.html"><img class="show upArrow" src="images/up-arrow.png" alt="up arrow"></a>
-</div>
+</div> -->
 
 <!-- HERO HTML -->
  
@@ -128,44 +129,45 @@
     <div id="hiViv">
       <h2>Nice to Meet You!</h2>
     </div>
-
     <div id="about">
       <h1>I am Vivian, a UX/UI & Visual Designer based in sunny Orange County.</h1>
     </div>
     <div id="vivPic">
-      <img src="images/Viv-portrait2.png" alt="About Vivian">
+      <img src="images/Viv-aboutme.png" alt="About Vivian">
     </div>
-    
+    <div id="viewResume">
+      <button id="myBtn">VIEW RESUME</button>
+    </div>
     <div id="downArrow">
-        <a href="#casestydies"></a><img class="arrow bounce hide"  src="images/white-arrow.png" alt="down arrow"></a> 
-    </div>
+      <a href="#work"></a><img class="arrow bounce hide" src="images/pink-arrow.png" alt="down arrow"></a> 
   </div>
+  </div>
+
 </section>
 
 <!-- CASE STYDY HTML -->
-
 <section id="caseStudy"> 
-        <!-- show  button> -->
   <div>
-    <div class="sectionHead"><a id="casestydies"></a>
-    </div>
-    <div>
-      <h3>UX/UI CASE STUDIES</h3> 
-    </div>
-
+    <div class="sectionHead"><a id="work"></a>
+  </div>
+  <div>
+    <a id="work"></a><h3>UX/UI CASE STUDIES</h3> 
+  </div>
+  <div>
     <section id="casestudyGrid">
+ <!-- EPA -->
       <div id="epa" class="casestudyGridArea container">
         <div class="casestudyHeader">EPA
         </div>
-        <div class="overlay text"><br><br><br><br><br><br><br>GOVERNMENT AGENCY WEBSITE REDESIGN<br>
-          UI STYLE GUIDE + RESPONSIVE WEB DESIGN</div>
+        <div class="overlay text">AGENCY WEBSITE REDESIGN<br>UI STYLE GUIDE + RESPONSIVE WEB DESIGN<br>The EPA website displays issues in consistency, hierarchy, and usability. I worked with a partner to use cards to changes in how one would navigate the website.<button>VIEW PROJECT</button>
+        </div>
       </div>
-
+<!-- Buzzle-->
       <div id="buzzle" class="casestudyGridArea container">
         <div class="casestudyHeader">Buzzle       
         </div>
-        <div class="overlay text"><br><br><br><br><br><br><br><br>MOBILE MEDICATION MANAGEMENT APP DESIGN</div>
-    
+        <div class="overlay text">MOBILE MEDICATION MANAGEMENT APP DESIGN<br>Developing an app with a family friendly focus that allows caregivers to manage medications with each other and gently remind patients to adhere to guidelines.<button>VIEW PROJECT</button></div>
+
       </div>
 
       <div id="esytrek" class="casestudyGridArea container">
@@ -173,75 +175,86 @@
         </div><div class="overlay text"><br><br><br><br><br><br><br><br>MOBILE TRAVEL APP DESIGN</div>
       </div>
         
-      
-
       <div id="feedoc" class="casestudyGridArea container">
         <div class="casestudyHeader">FeedOC      
         </div><div class="overlay text"><br><br><br><br><br><br><br>NON-PROFIT RESPONSIVE WEB DESIGN<br>
           UI STYLE GUIDE + WEBSITE REDESIGN</div>
-      </div>
-
+      </div>  
     </section>
+
   </div> 
 </section>
 
 <!-- ABOUT ME HTML -->
 <section class="aboutMe"> 
+  
   <div>
     <div class="sectionHead"><a id="aboutme"></a>
     </div>
     <div>
       <h3>ABOUT ME</h3>
     </div>
-    <div class="vivL"><img src="images/Viv-aboutme.png" alt="About Vivian"></div>
-      <div id="aboutText"><h6>With my background in graphics and packing design, I have a successful 
-        career in visual design. But after enrolling in UC Irvine’s UX/UI Design Boot 
-        Camp Program, I came to have a love for learning about User Centered Design and 
-        Process. With my design process, I have a solid foundational skills in problem 
-        solving towards creating user-friendly, and functional products. As a meticulous 
-        design enthusiast, I love playing with colors, typography, and imagery: and these 
-        are just few of my passions!
-        <br><br>In my spare time, I enjoy cooking, pilates, and walking my four-legged doggy HeiHei.</h6>
+    <div class="aboutContainer">
+      <div id="vivL"><img src="images/Viv-portrait3.png" alt="Vivian and HeiHei">
       </div>
+      <div id="aboutText"><span>W</span><p>ith my background in graphics and packing design, I have a successful career in visual design. But after enrolling in UC Irvine’s UX/UI Design Boot Camp Program, I came to have a love for learning about User Centered Design and Process. With my design process, I have a solid foundational skills in problem solving towards creating user-friendly, and functional products. As a meticulous design enthusiast, I love playing with colors, typography, and imagery: and these are just few of my passions!<br><br>In my spare time, I enjoy cooking, pilates, and walking my four-legged doggy HeiHei.
+      </p>
+      </div>
+    </div>
   </div>
   
  <!-- Skill section -->   
-  <div class="container">
-    <div id="row" class="flex">
-      <div class="flexItem aboutHeading">
-        SKILLS
-        <h6>Design&nbsp;Thinking<br>User-Centric&nbsp;Design&nbsp;Research<br>User&nbsp;Interface&nbsp;Development<br>Persona&nbsp;Development<br>Competitive&nbsp;Analysis<br>Heuristic&nbsp;Analysis<br>User&nbsp;Flow<br>Wireframing<br>Storyboarding<br>
-        </h6>
-      </div>
-      <div class="flexItem"><br><br>
-        <h6>Prototyping<br>Responsive&nbsp;Web&nbsp;Design<br>Usability&nbsp;Testing<br>A/B&nbsp;Testing<br>UI&nbsp;Style&nbsp;Guide<br>Visual&nbsp;Design<br>Responsive&nbsp;Web&nbsp;Design<br>Branding<br>Product&nbsp;Illustration<br></h6>
-      </div>
-      <div class="flexItem aboutHeading">
-        TOOLS
-        <h6>HTML5<br>CSS4<br>Bootstrap<br>Visual&nbsp;Studio&nbsp;Code<br>GitHub<br>Adobe XD<br>InVision<br>Photoshop<br>Figma<br>Miro<br> 
-        </h6>    
-      </div>
-    </div> 
+  <div class="skillContainer">
+    <div class="flexItem" id="uxskill">
+      <h6>UX SKILLS</h6>
+      <p>Design&nbsp;Thinking<br>
+        User-Centric&nbsp;Design&nbsp;Research<br>
+        User&nbsp;Interface&nbsp;Development<br>
+        Persona&nbsp;Development<br>
+        Competitive&nbsp;Analysis<br>
+        Usability&nbsp;Testing<br>
+        User&nbsp;Flow<br>
+        Wireframing<br>
+        Storyboarding<br>
+      </p>
+    </div>
+    <div class="flexItem" id="uiskill">
+      <h6>UI SKILLS</h6>
+      <p>Visual&nbsp;Design<br>
+        UI&nbsp;Style&nbsp;Guide<br>
+        Design&nbsp;Direction<br>
+        Animation<br>
+        Prototyping<br>
+        Responsive&nbsp;Web&nbsp;Design<br>  
+      </p>
+    </div>
+    <div class="flexItem" id="tools">
+      <h6>TOOLS</h6>
+      <p>HTML5<br>CSS4<br>Bootstrap<br>Visual&nbsp;Studio&nbsp;Code<br>GitHub<br>Adobe XD<br>InVision<br>Photoshop<br>Figma
+      </p>   
+    </div>
   </div>
+
 </sectin>
 
 <!-- CONTACT HTML -->
 <section>
-  <div class="contactBg"><a id="contact"></a>
+  <div class="sectionHead"><a id="contact"></a>
+  </div> 
+  <div class="contactBg">
     <div class="block_element">
       <div>
         <h3><a id="contact">SAY HELLO!</a></h3> 
         <hr style="width:80px;border:2px solid #97C8D3" class="w3-round">
       </div>
       <div>
-        <h4>I am always looking for new opportunities and am comfortable working remotely. 
-        <br><br>Please get in touch and I will get back to you soon.
-        </h4>
+        <p>Feel free to contact me if you have any questions or just want to say Hello! 
+        </p>
         <form>
         <input type="text" placeholder="Your Name"></input>
         <input type="text" placeholder="Your Email"></input>
       
-        <input type="textarea" placeholder="Your Message"></input>
+        <input type="textarea" placeholder=""></input>
         <input class="submit" type="submit" value="SEND MESSAGE"></input>
         </form>
       </div>
@@ -249,22 +262,6 @@
   </div>
 </section>
 
-<!--testing modal-->
-<section>
-  <div class="aboutMe block_element">
-   
-      <div>
-        <h3><a id="resume">View Resume</a></h3> 
-        <hr style="width:80px;border:2px solid #97C8D3" class="w3-round">
-      </div>
-      <div>
-        <!-- <h4>I am always looking for new opportunities and am comfortable working remotely. 
-        </h4> -->
-        <button class="submit" id="myBtn">RESUME</button>
-      </div>
-    
-  </div>
-</section>
 
 <!-- The Modal -->
   <div id="myModal" class="modal">
@@ -273,7 +270,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <span class="close">&times;</span>
-        <h2>Resume comig soon</h2>
+        <h2>Resume coming soon</h2>
       </div>
       <div class="modal-body">
         <p>Thanks for checking :)</p>
@@ -314,22 +311,24 @@ window.onclick = function(event) {
 </script>
 
 
-
-
-
 <!-- Footer HTML -->
-<footer>
-    <div id="footer">
-    <div id="socialIcons"><img src="images/sm-icons.png"><p>Vivian Liu © All Rights Reserved</p>
-    </div>
-    <div id="navigation">
-      <p><a href="#casestydies">WORK</a></p>
-      <p><a href=about.html>ABOUT</a></p>
-      <p><a href="#contact">CONTACT</a></p>
-      <p><a href="#resume">RESUME</a></p>
-    </div>
-</footer>
+<section class="footer"> 
+  <footer id="footerContent">
+      <div id="socialIcons"><img src="images/linkedin-circled-1.png"><img src="images/github-2.png"><img src="images/instagram-new-2.png">
+      </div>
+      <p class="p3">© 2020 Vivian Liu</p>
+      <div id="navigation">
+        <p2><a href="#casestydies">HOME</a></p2>
+        <p2><a href="#work.html">WORK</a></p2>
+        <p2><a href="#contact">ABOUT</a></p2>
+        <p2><a href="#resume">CONTACT</a></p2>
+      </div>
+<!--       
+      <div><a href="index.html"><img class="show upArrow" src="images/up-arrow.png" alt="up arrow"></a>
+      </div> -->
 
+  </footer="footerContent">
+</section>
   <!-- <div class="preloader">
     <img src="images/mylogo.png">
   </div>
