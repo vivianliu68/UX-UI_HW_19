@@ -244,6 +244,7 @@ h6 {
   font-size: 24px;
   color: #619FB4;
   letter-spacing: 1px;
+  margin: 1px 10px 10px 0px;
 }
 
 p {
@@ -327,7 +328,7 @@ section {
 #casestudyGrid {
   /* margin: 10px; */
   display: grid;
-  padding: 20px;
+  padding: 0px 50px 0px 50px;
   grid-template-rows: 460px 460px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -360,7 +361,7 @@ div.casestudyGridArea img {
   left: 0;
   right: 0; */
   height: 100%;
-  width: 100%;
+  width: 101%;
   opacity: 0;
   transition: .5s ease;
   background-color: #7BC3D8;
@@ -383,7 +384,7 @@ div.casestudyGridArea img {
   letter-spacing: 1px; 
   text-align: center;
   line-height: 22px;
-  /* -ms-transform: translate(-50%, -50%); */
+  /* transform: translate(-50%, -50%); */
 }
 
 /* Case Study Card Main Head */
@@ -430,7 +431,7 @@ div.casestudyGridArea img {
   display: inline-block;
   /* width: 1000px; */
   justify-content: space-around;
-  padding: 0px 100px 0px 40px;
+  padding: 0px 120px 40px 120px;
 }
 
 #vivL {
@@ -451,7 +452,7 @@ div.casestudyGridArea img {
 span {
   float: left;
   width: 1.1em;
-  font-size: 302%;
+  font-size: 46px;
   font-family: 'Playfair Display';
   line-height: 110%;
   color: #619FB4;
@@ -459,7 +460,6 @@ span {
 
 .skillContainer {
   display: flex;
-
   justify-content: space-evenly;
   margin-bottom: 100px;
 }
