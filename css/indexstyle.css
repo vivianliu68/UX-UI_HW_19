@@ -323,7 +323,7 @@ section {
   margin: 40px;
   cursor: pointer;
   display: grid;
-  align-content: top;
+  /* align-content: top; */
   position: relative;
 }
 
