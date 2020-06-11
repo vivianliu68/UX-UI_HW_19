@@ -305,26 +305,6 @@ section {
   background-color:#F8F7F4;
 }
 
-.container {
-  position: relative;
-  display: flex;
-}
-
-#caseStudy button {
-  margin-top: 10px;
-  font-size: 8pt;
-  background-color: #E98F76;
-  border: 1px solid #E98F76;
-  width: 160px;
-  color: white;
-  letter-spacing: 2px;
-  border-radius: 5px;
-  padding: 10px;
-  align-content: center;
-  margin-bottom: 80px;
-}
-
-
 #casestudyGrid {
   /* margin: 10px; */
   display: grid;
@@ -347,34 +327,68 @@ section {
   position: relative;
 }
 
-
 div.casestudyGridArea img {
   width: 70%;
   height: auto;
   vertical-align: middle
 }
 
-.overlay {
-  position: absolute;
-  /* top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; */
-  height: 100%;
-  width: 101%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #7BC3D8;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* background-color: rgba(29, 55, 72, 0.8); */
+.container {
+  position: relative;
+  display: flex;
 }
 
 .container:hover .overlay {
   opacity: 1;
   display: flex;
 }
+
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-content: space-between; */
+  justify-content: center;
+  height: 100%;
+  width: 101%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(116, 178, 197);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(29, 55, 72, 0.8); */
+}
+
+.overlay-head {
+  margin: 60px 24px 20px 24px;
+  font-family: 'Playfair Display';
+  font-weight: 200;
+  font-size: 26px;
+  line-height: 36px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.overlay-subhead {
+  margin: 10px 24px 20px 24px;
+  font-family: 'Roboto','Source Sans Pro';
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.overlay-body {
+  margin: 10px 55px 30px 55px;
+  font-family: 'Roboto','Source Sans Pro';
+  font-weight: 100;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1px;
+}
+
 
 .text {
   font-family: 'Roboto','Source Sans Pro';
@@ -399,6 +413,38 @@ div.casestudyGridArea img {
   color: white; border-left: 8px solid #7BC3D8;
 }
 
+#caseStudy button {
+  margin-top: 10px;
+  font-size: 8pt;
+  background-color: #E98F76;
+  border: 1px solid #E98F76;
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+
+#caseStudy button:hover {
+  margin-top: 10px;
+  font-size: 8pt;
+  background-color: rgb(67, 49, 44);
+  border: 1px solid rgb(67, 49, 44);
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+
+/* .container:hover .overlay {
+  opacity: 1;
+  display: flex;
+} */
 
 #epa {
   grid-area: epa;
